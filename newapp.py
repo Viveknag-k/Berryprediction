@@ -23,7 +23,7 @@ def ip_features():
 df = ip_features()
 st.write(df)
 
-DF = pd.read_csv(https://github.com/Viveknag-k/Berryprediction/blob/main/WildBlueberryPollinationSimulationData.csv)
+DF = pd.read_csv("WildBlueberryPollinationSimulationData.csv")
 x = DF[['clonesize','honeybee','bumbles','andrena','osmia']]
 
 y= DF['yield']
