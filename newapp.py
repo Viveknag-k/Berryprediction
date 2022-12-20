@@ -22,13 +22,5 @@ def ip_features():
     return features
 df = ip_features()
 st.write(df)
-
-DF = pd.read_csv("WildBlueberryPollinationSimulationData.csv")
-x = DF[['clonesize','honeybee','bumbles','andrena','osmia']]
-
-y= DF['yield']
-
-model.fit(x,y)
-
 pred = model.predict(df)
 st.write('yield',pred)
